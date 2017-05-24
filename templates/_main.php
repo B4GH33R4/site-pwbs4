@@ -20,26 +20,54 @@
 if(!$useMain || $config->ajax) return;
 /**********************************************************************************************/
 ?><!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="no-js" lang="EN">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--|
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                         T I T L E   M E T A   T A G S
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||!!!-->
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow"><!--|###!!!###-->
+<title><?php echo $browserTitle; ?></title>
+<?php if($page->summary) echo "<meta name='description' content=\"{$page->summary}\" />"; ?>
+<meta name="author" content="traumturbulenzen@googlemail.com">
+<!--|
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                         V I E W P O R T
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||!!!-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--|
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                         S T Y L E   S H E E T S
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||!!!-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400|Josefin+Slab|Vast+Shadow' rel='stylesheet' type='text/css'>
+<link href="<?php echo $config->urls->templates; ?>assets/css/icofont.css" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo $config->urls->templates; ?>assets/css/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo $config->urls->templates; ?>assets/css/tether.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo $config->urls->templates; ?>assets/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo $config->urls->templates; ?>assets/css/meanmenu.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo $config->urls->templates; ?>assets/css/main.css" media="all" rel="stylesheet" type="text/css" />
+<!--|!!!||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                         S C R I P T S
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||!!!-->
 
-	<title><?php echo $browserTitle; ?></title>
-
-	<?php if($page->summary) echo "<meta name='description' content='$page->summary' />"; ?>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-	<link href="<?php echo $config->urls->templates; ?>css/styles.css" media="all" rel="stylesheet" type="text/css" />
-	<link href="<?php echo $config->urls->templates; ?>css/meanmenu.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $config->urls->templates; ?>css/main.css" media="all" rel="stylesheet" type="text/css" />
+<!--|!!!||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                         F A V I C O N S
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||!!!-->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body class='<?php echo "template-{$page->template} section-{$page->rootParent->name} page-$page"; ?>'>
 
 <!--Mobile Menu-->
 <header id="mobile-menu" class="hidden-sm-up">
 	<nav>
-		<a class='navbar-brand navbar-brand-mobile hidden-md-up' href='<?php echo $homepage->url; ?>'>Pwbs4</a>
+		<a class='navbar-brand navbar-brand-mobile hidden-md-up' href='<?php echo $homepage->url; ?>'>
+			
+			PrcssWr
+			
+			</a>
 		<?php
 		$pa = $homepage->children;
 		$pa = $pa->prepend($homepage);
@@ -54,7 +82,11 @@ if(!$useMain || $config->ajax) return;
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<a class="navbar-brand hidden-xs-down" href="<?php echo $homepage->url ?>">Pwbs4</a>
+				<a class="navbar-brand hidden-xs-down" href="<?php echo $homepage->url ?>">
+					
+					PrcssWr
+					
+					</a>
 
 				<?php
 				$pa = $homepage->children;
@@ -64,7 +96,7 @@ if(!$useMain || $config->ajax) return;
 
 				<!-- search form -->
 				<form class="search form-inline pull-xs-right" action='<?php echo $pages->get('template=search')->url; ?>' method='get'>
-					<input class="form-control" data-toggle="tooltip" data-placement="bottom" title="Search the site" style="width: 100%;" type="text" name="q" placeholder="Search" value="<?php echo $sanitizer->entities($input->whitelist('q')); ?>" />
+					<input class="form-control" data-toggle="tooltip" data-placement="bottom" title="Search the site" type="text" name="q" placeholder="Search" value="<?php echo $sanitizer->entities($input->whitelist('q')); ?>" />
 				</form>
 			</div>
 		</div>
@@ -106,7 +138,19 @@ if(!$useMain || $config->ajax) return;
 		<div class="row">
             <div class="col-xs-12">
                 <footer class="footer m-t-3">
-                    <p>&copy; <?php echo date('Y'); ?> pwbs4 &nbsp; / &nbsp; Powered by <a href='http://processwire.com'>ProcessWire CMS</a></p>
+                    <p>&copy; <?php echo date('Y'); ?> pwbs4 &nbsp; | &nbsp; 
+	powered by <a href="https://github.com/flydev-fr/site-pwbs4" target="_blank">pwbs4</a> | enhanced by <a href='mailto:traumturbulenzen@googlemail.com'>Mr. Bertrand | </a>
+						<a href='http://processwire.com' title="PROCESSWIRE">
+							<i class="fa fa-pinterest" aria-hidden="true"></i></a> 
+						<a href='http://' title="BOOTSTRAP">
+							<i class="icofont icofont-social-bootstrap"></i></a>
+						<a href='http://' title="HTML5">
+							<i class="fa fa-html5" aria-hidden="true"></i></a>
+						<a href='http://' title="CSS3">
+							<i class="fa fa-css3" aria-hidden="true"></i></a>
+						<a href="http://icofont.com/" target="_blank">
+							<i class="fa fa-icofont" aria-hidden="true"></i></a>		
+					</p>
                 </footer>
             </div>
 		</div>
@@ -116,13 +160,13 @@ if(!$useMain || $config->ajax) return;
 
 	<script type="text/javascript">
 	if (typeof jQuery == 'undefined') {
-	    document.write(unescape("%3Cscript src='<?php echo $config->urls->templates; ?>bower_components/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+	    document.write(unescape("%3Cscript src='<?php echo $config->urls->templates; ?>assets/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
 	}
 	</script>
-	<script src="<?php echo $config->urls->templates; ?>bower_components/tether/dist/js/tether.min.js"></script>
-	<script src="<?php echo $config->urls->templates; ?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="<?php echo $config->urls->templates; ?>js/jquery.meanmenu.min.js"></script>
-	<script src="<?php echo $config->urls->templates; ?>js/scripts.js"></script>
+	<script src="<?php echo $config->urls->templates; ?>assets/js/tether.min.js"></script>
+	<script src="<?php echo $config->urls->templates; ?>assets/js/bootstrap.min.js"></script>
+	<script src="<?php echo $config->urls->templates; ?>assets/js/jquery.meanmenu.min.js"></script>
+	<script src="<?php echo $config->urls->templates; ?>assets/js/scripts.js"></script>
 	<?php foreach($config->scripts as $url) echo "<script src='$url'></script>"; ?>
 </body>
 </html>
