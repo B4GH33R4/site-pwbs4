@@ -1,6 +1,6 @@
 <?php if(!defined("PROCESSWIRE_INSTALL")) die();
 $info = array(
-	'title' => "ProcessWire Bootstrap 4 profile", 
-	'summary' => "", 
-	'screenshot' => "capture.png"
+	'title' => "Forked Bootstrap 4 site profile", 
+	'summary' => "An enhanced Processwire site profile based on the bootstrap 4 site profile.", 
+	'screenshot' => "screenshot.jpg"
 	);
