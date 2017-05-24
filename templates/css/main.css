@@ -1,4 +1,6 @@
-/* Space out content a bit */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	MAIN STYLES
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -6,6 +8,218 @@ body {
     line-height: 1.8em;
     padding-top: 5rem;
     padding-bottom: 1.5rem;
+	color:#131313;
+	text-color:1px 1px 5px rgba(0,0,0,.24);
+}
+a {
+	color:#000;
+	font-weight:bold;}
+a:hover,
+a:focus {
+	color:#000;	
+	text-decoration:none;
+	text-shadow:10px 10px 1px rgba(19,19,19,.1),
+				11px 11px 1px rgba(19,19,19,.1),
+				12px 12px 1px rgba(0,0,0,.15);
+	transition:all 1s ease-in-out; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  	font-family:'Vast Shadow',cursive;
+	word-spacing:3px;
+	letter-spacing:-1px;
+	background: radial-gradient(ellipse at center, 
+		rgba(10,10,9,.2) 0%,
+		rgba(12,13,11,.3) 1%,
+		rgba(11,12,13,.2) 100%);	
+	border:1px solid rgba(3,19,11,1);
+	padding:.125em 0 .125em .45em;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px rgba(255,255,255,1),
+				2px 2px 1px rgba(255,255,255,1),
+				12px 12px 2px rgba(0,0,0,.15);
+	border:1px dotted #131313;
+	border-radius:2px;
+	text-align:left;}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	CARD
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.card .card-title { 
+	color:#fff;
+	background: linear-gradient(to right, 
+					rgba(19,19,19,0.88) 0%,
+					rgba(19,19,19,0.77) 50%,
+					rgba(19,19,19,0.88) 100%);	
+	word-spacing:3px;
+	text-shadow:1px 1px 1px rgba(25,25,25,1),
+				2px 2px 1px rgba(0,0,0,.9),
+				3px 3px 1px rgba(0,0,0,.9),
+				4px 4px 1px rgba(0,0,0,.9),
+				5px 5px 2px rgba(19,19,19,.9);
+	border:1px dotted rgba(255,255,255,.88);
+	border-radius:4px;}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	THX FOR YOUR 'FUNKY PUSHY BUTTONS' BRO
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.btn {
+  	display:inline-block;
+  	border:none;
+  	border-radius:.3em;
+  	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+  	color:#fff;
+  	cursor:pointer;
+  	font-family:'Josefin Slab', sans-serif;
+  	line-height:1.5;
+  	letter-spacing:1px;
+  	padding:.5em 1.5em .75em;
+  	position: relative;
+  		text-transform:uppercase;
+  		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  			vertical-align: middle;
+  			-webkit-user-select: none;
+     		-moz-user-select: none;
+      		-ms-user-select: none;
+          	user-select: none; }
+  .btn:active {
+    outline: none;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
+    margin-top: .25em;
+    padding-bottom: .5em; }
+
+/*##### COLORFUL ######*/
+
+.btn--blue {
+  	background-color: rgb(52, 152, 219);
+	transition:all 1s ease-in-out;
+	text-shadow:1px 1px 2px rgba(19,19,19,.5)
+	}
+.btn:hover, 
+.btn:focus {
+	color:#fff;
+  	text-shadow:10px 10px 1px rgba(19,19,19,.1),
+				11px 11px 1px rgba(19,19,19,.1),
+				12px 12px 1px rgba(0,0,0,.15);
+	transition:all 1s ease-in-out; }
+.btn--green {
+  	background-color: rgb(26, 188, 156);
+	transition:all 1s ease-in-out;
+	text-shadow:1px 1px 2px rgba(19,19,19,.5) 
+	}
+
+.btn--red {
+  	background-color: rgb(230, 93, 79);
+	transition:all 1s ease-in-out;
+	text-shadow:1px 1px 2px rgba(19,19,19,.5)
+	}
+
+.btn--orange {
+  	background-color: rgb(255, 153, 0);
+ 	transition:all 1s ease-in-out;
+	text-shadow:1px 1px 2px rgba(19,19,19,.5)
+	}
+
+.btn--yellow {
+  	background-color: rgb(255, 227, 0);
+ 	transition:all 1s ease-in-out;
+	text-shadow:1px 1px 2px rgba(19,19,19,.5)
+	}
+
+.btn--violet {
+  	background-color: rgb(174, 48, 211);
+	transition:all 1s ease-in-out;
+	text-shadow:1px 1px 2px rgba(19,19,19,.5)
+	}
+
+/*##### CONTRAST ######*/
+
+.btn--black {
+  background-color: #131313; }
+
+.btn--white {
+  background-color: #fafafa; }
+
+.btn--lg {
+  font-size: 1.5em; }
+
+.btn--df {
+  font-size: 1.25em; }
+
+.btn--md {
+  font-size: 1em; }
+
+.btn--sm {
+  font-size: 0.75em; }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	SITEMAP
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.sitemap ul, 
+.sitemap li {
+	display:inlien-block;
+	list-style:none;
+	margin:.75rem;
+	padding:0;
+}
+.sitemap ul a, 
+.sitemap ul a:visited {
+	color:#131313;
+	font-size:1.75em;
+	text-shadow: 1px 1px 3px rgba(19, 19, 19,.2);
+	transition:all 1s ease-in-out;	
+}
+.sitemap ul li li a, 
+.sitemap ul li li a {
+	transition:all 1s ease-in-out;
+	border:1px solid #c3c3c3;
+	background:rgba(0,0,0,.3);
+	border-radius:50em;
+	padding:0 1.75em 0 .75em;
+}
+.sitemap ul li ul li a:before, 
+.sitemap ul li ul li a:before {
+	font-family:'icofont',cursive;
+	transition:all 1s ease-in-out;
+}
+.sitemap ul li ul li a:first-child:before, 
+.sitemap ul li ul li a:first-child:before {
+	content:'\e91e\0020';
+}
+.sitemap ul li ul li a:last-child:before, 
+.sitemap li ul li li a:last-child:before {
+	content:'\ebc6\0020';
+}
+.sitemap ul li ul li ul li a:before, 
+.sitemap ul li ul li ul li a:before {
+	font-family:'icofont',cursive;
+	transition:all 1.2s ease-in-out;
+}
+.sitemap ul li ul li ul li a:first-child:before, 
+.sitemap li li ul li ul li a:first-child:before {
+	content:'\eb2b\0020';
+}
+.sitemap ul li ul li ul li ul li a:first-child:before, 
+.sitemap li li ul li ul li ul li a:first-child:before {
+	content:'\eb79\0020';
+}
+.sitemap a:hover,
+.sitemap a:focus {
+	color:#131313;
+	border:1px solid transparent;
+	background:transparent;
+	transition:all 500ms ease-in-out;
+	text-decoration:none;
+	text-shadow:10px 10px 1px rgba(19,19,19,.1),
+				11px 11px 1px rgba(19,19,19,.1),
+				12px 12px 1px rgba(0,0,0,.15);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	NAVIGATION
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.navbar a {
+	border:0;
 }
 .navbar-brand {
    line-height: 1.8em;
@@ -27,15 +241,16 @@ form.search {
     margin-top: .28rem;
 }
 
-/* meanmenu adjustment (see body: line-height) */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	SEE BODY LINE-HEIGHT .. MEAN MENU ADJUST
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .mean-nav ul li {
     line-height: 24px;
 }
-.mean-container .mean-nav ul li a.mean-expand {
-    height: 24px;
-}
 
-/* search form on mobile */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	SEARCH FORM FOR MOBILE
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .mobile-search-form  {
     width: 100%;
     margin: auto;
@@ -56,9 +271,10 @@ form.search {
     border-bottom: 1px dashed #ffffff;
 }
 
-/* Bootstrap 4 navbar with multi level fix
- * https://processwire.com/talk/topic/5680-bootstrap-3-navigation-with-multiple-leveltier-fix/
-*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	https://processwire.com/talk/topic/5680-bootstrap-3-navigation-with-multiple-leveltier-fix/
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 .nav-link {
     font-family: 'Open Sans', Sans-Serif;
     font-weight: 300;
@@ -112,28 +328,74 @@ form.search {
     border-radius:6px 0 6px 6px;
 }
 
-.dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover {
-    color: #333;
-    text-decoration: none;
-    background-color: #626262;
-    outline: 0;
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	SEARCH FORM FOR MOBILE
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+li.dropdown-item a {
+	color:rgba(255,255,255,.8);
 }
-/* Custom dropdown bg-color on mouse hover */
 li.dropdown-item:hover {
-    background-color: #626262;
-    color: #333333;
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
 }
-
-/* Custom page footer */
+li.dropdown-item a:hover {
+    color: #fff;
+}
+li.dropdown-item:first-child:hover {
+    background-color: rgba(230, 93, 79,.5);
+}
+li.dropdown-item:first-child a:hover {
+    color: #fff;
+}
+li.dropdown-item:nth-child(2n+0):hover {
+    background-color: rgba(174, 48, 211,.5);
+}
+li.dropdown-item:nth-child(2n+0) a:hover {
+    color: #fff;
+}
+li.dropdown-item:nth-child(3n+0):hover {
+    background-color: rgba(52, 152, 219,.5);
+}
+li.dropdown-item:nth-child(3n+0) a:hover {
+    color: #fff;
+}
+li.dropdown-item:nth-child(4n+0):hover {
+    background-color: rgba(26, 188, 156,.5);
+}
+li.dropdown-item:nth-child(4n+0) a:hover {
+    color: #fff;
+}
+li.dropdown-item:nth-child(5n+0):hover {
+    background-color: rgba(255, 227, 0,.5);
+}
+li.dropdown-item:nth-child(5n+0) a:hover {
+    color: #fff;
+}
+li.dropdown-item:nth-child(6n+0):hover {
+    background-color: rgba(255, 153, 0,.5);
+}
+li.dropdown-item:nth-child(6n+0) a:hover {
+    color: #fff;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	FOOTER
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .footer {
     padding-top: 1.5rem;
     color: #777;
     border-top: .05rem solid #e5e5e5;
 }
-
-/* Media queries for responsive layout */
+.footer i {
+	font-size:48px;
+	vertical-align:middle;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	MEDIA QUERIES
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 @media only screen and (max-width: 768px) {
-    /* mobile layout */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+		MOBILE 
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
     body {
         padding-top: 0;
     }
@@ -148,7 +410,10 @@ li.dropdown-item:hover {
 
 
 @media only screen and (min-width: 1200px) {
-    /* extra-wide desktop layout */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EXTRA WIDE DESKTOP LAYOUT 
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
     body, td, textarea {
         font-size: 115%;
         line-height: 1.8em;
