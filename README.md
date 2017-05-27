@@ -24,11 +24,6 @@ The precompiled version can be [downloaded] here (https://root.access.ly/cloud/i
 * jQuery
 * [Tether](http://tether.io/) (Tooltips and Popovers)
 
-### How To Install
-1. Download the [zip file](https://github.com/flydev-fr/site-pwbs4/archive/master.zip) at Github or clone directly the repo: ```git clone git@github.com:flydev-fr/site-pwbs4.git``` and skip the **step 2**.
-2. Extract the folder **site-pwbs4-master** into a fresh ProcessWire installation root folder.
-3. During the installation of ProcessWire, choose the profile **"ProcessWire Bootstrap 4 profile"**.
-
 ### References
 * [Bootstrap v4 documentation](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
 * [ProcessWire documentation](https://processwire.com/docs/)
